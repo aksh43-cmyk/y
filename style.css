@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;/*scroll bar*/
+    
+    
+}
+.logo{
+    width: 150px;
+}
+.listitems{
+display: inline;
+list-style: none;
+margin: 0px 20px;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 20px;
+    
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.links:hover{
+    text-decoration: underline;
+    color: red;
+
+}
+/* .links:visited{ */
+    text-decoration: underline;
+    color: rgb(76, 9, 158);
+
+}
+.homecontent{
+    margin: 13% 0px 0px 8%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Qwitcher Grypen", cursive;
+    margin-left: 30px;
+}
+#iname{
+    font-family: "Dancing Script", cursive;
+    color: rgb(227, 136, 17);
+}
+#userdetails{
+    line-height: 1.5;
+    margin-left: 30px;
+
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+.homeimg{
+    width: 35%;
+    height: 55%;
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px; /*chumma so that in hover i can change the bottom size for taht the same prop is  used nw*/
+    left: 50%;
+    transform: translateX(-50%); /*for animation first process or position next we use hover*/
+    transition: bottom 2s,left 1s;/*for smooth moment*/
+}
+.homeimg:hover #shape{
+    bottom: 80px;
+
+}
+.homeimg:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 20% 0px 0px 8%;
+}
+.sectionhead{
+    top: 8px;
+  text-align: center;
+
+}
+.mainhead{
+    margin-
+    font-size: 30px;
+   
+}
+.subhead{
+    font-size: 30px;
+    color: green;
+}
+.aboutbody{
+    margin-top: 80px;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: auto auto; /*number of coloums is 2 then 2 auto*/
+}
+.img1{
+    width: 100%;
+}
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.infobox{
+    margin-bottom: 10px;
+
+}
+.infobox>span{
+    margin-left: 1rem;/*for changes in span in infobox*/
+}
+.skills{
+    margin: 15% 18% 0px 18%;
+}
+.skillcontents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    margin-top: 20px;
+
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barhead, .barpercent{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: rgb(231, 14, 14);
+    width: 84%;
+}
+.cssbar{
+    background-color: rgb(233, 103, 16);
+    width: 74%;
+}
+.jsbar{
+    background-color: rgb(230, 45, 9);
+    width: 64%;
+}
+.reactbar{
+    background-color: rgb(234, 83, 8);
+    width: 85%;
+}
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+.iconcollections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,red,orange,blue);
+}
+.icon:hover .brands{
+    color: azure;
+    /*animation*/
+    animation: rotate 4s;/*this rotate is jus a nme*/
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg); /*but this rotate is doing a function*/
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(40deg); /*but this rotate is doing a function*/
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(60deg); /*but this rotate is doing a function*/
+    }
+    100%{
+        transform: rotate(-60deg);
+    }
+    
+}
+footer{
+    margin-top: 8%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.uparrow{
+    float: right;
+    margin-top: -40px;
+    border-color: white;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
